@@ -1,15 +1,21 @@
-import Link from "next/link";
+import { Header } from '@/components/header'
+import { Hero } from '@/components/hero'
+import { Features } from '@/components/features'
+import { QuickStart } from '@/components/quick-start'
 
-const Home = () => {
+export default function Home() {
   return (
-    <div>
-      <h1>Home</h1>
-      <p>Hello World! This is the Home page</p>
-      <p>
-        Visit the <Link href="/about">About</Link> page.
-      </p>
+    <div className="min-h-screen flex flex-col dark:bg-gray-900 dark:text-white">
+      <Header />
+      <main>
+        <Hero />
+        <Features />
+        <QuickStart />
+      </main>
+      <footer className="mt-auto py-6 text-center text-sm text-gray-500 dark:text-gray-400">
+        © 2024 Mager. All rights reserved.
+      </footer>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
