@@ -13,7 +13,7 @@ export default function Home() {
         <QuickStart />
       </main>
       <footer className="mt-auto py-6 text-center text-sm text-gray-500 dark:text-gray-400">
-        © 2024 Mager. All rights reserved.
+        © 2024 Prasetyo Wicaksono. All rights reserved.
       </footer>
     </div>
   )
